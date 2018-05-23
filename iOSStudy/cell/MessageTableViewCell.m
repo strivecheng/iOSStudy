@@ -31,6 +31,9 @@
     [self.contentView addSubview:self.lastMessageLabel];
     [self.contentView addSubview:self.timeLabel];
     [self.contentView addSubview:self.headImageView];
+    self.timeLabel.text = self.message.time;
+    self.lastMessageLabel.text = self.message.lastMessage;
+    self.titleLabel.text = self.message.title;
 
 }
 
@@ -61,7 +64,6 @@
     if (!_titleLabel) {
         self.titleLabel = [[UILabel alloc]init];
         self.titleLabel.frame = CGRectMake(self.headImageView.frame.size.width+self.headImageView.frame.origin.x+5, 5,300,20);
-        self.titleLabel.text = self.message.title;
     }
     return _titleLabel;
 }
@@ -69,7 +71,6 @@
 - (UILabel *)lastMessageLabel{
     if (!_lastMessageLabel) {
         self.lastMessageLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.headImageView.frame.size.width+self.headImageView.frame.origin.x+5, self.titleLabel.frame.size.height+self.titleLabel.frame.origin.y+5,300,20)];
-        self.lastMessageLabel.text = self.message.lastMessage;
         self.lastMessageLabel.font = [UIFont systemFontOfSize:12];
         self.lastMessageLabel.textColor = [UIColor grayColor];
     }
@@ -80,7 +81,6 @@
     if (!_timeLabel) {
         self.timeLabel = [[UILabel alloc]init];
         self.timeLabel.frame = CGRectMake([UIScreen mainScreen].bounds.size.width-30-10, 5,50,20);
-        self.timeLabel.text = self.message.time;
         self.timeLabel.font = [UIFont systemFontOfSize:12];
         self.timeLabel.textColor = [UIColor grayColor];
     }
