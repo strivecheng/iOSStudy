@@ -64,8 +64,8 @@
 		6CA1441E20B570C400966E8C /* SearchResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
 		6CA1441F20B570C400966E8C /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		6CA1442020B570C500966E8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CA1443320B581F900966E8C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CA1443420B581F900966E8C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CA1443620B5847A00966E8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 		6CA143DC20B56ED000966E8C /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				6CA1443320B581F900966E8C /* AppDelegate.h */,
+				6CA1443620B5847A00966E8C /* AppDelegate.h */,
 				6CA1443420B581F900966E8C /* AppDelegate.m */,
 				6CA1441B20B570C400966E8C /* DiscoverViewController.h */,
 				6CA1441420B570C300966E8C /* DiscoverViewController.m */,
